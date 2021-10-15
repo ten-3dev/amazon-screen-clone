@@ -1,5 +1,7 @@
+import { HeaderView } from "./style";
+
 const Header = () => {
-  return <div></div>;
+  return <HeaderView></HeaderView>;
 };
 
 export default Header;
