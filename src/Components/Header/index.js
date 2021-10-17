@@ -1,3 +1,5 @@
+import React, { useRef, useState } from "react";
+
 import { Location, Logo, Glass, Arrow } from "../../Assets/index";
 
 import {
@@ -17,6 +19,14 @@ import {
 } from "./style";
 
 const Header = props => {
+  const [check, setCheck] = useState(false);
+
+  const focus = useRef(null);
+
+  const handleClick = () => {
+    focus.current.focus();
+  };
+
   return (
     <HeaderView>
       <HeaderItemLogo src={Logo} />
@@ -27,17 +37,29 @@ const Header = props => {
           <DeliverText weight="bold">Republic of Korea</DeliverText>
         </DeliverTextSec>
       </DeliverSec>
-      <SearchSec>
-        <SearchAllSec>
-          <SearchAllImg src={Arrow} />
-          <SearchAllOption selected>All</SearchAllOption>
+      <SearchSec foc={check}>
+        <SearchAllImg src={Arrow} onClick={handleClick} />
+        <SearchAllSec ref={focus}>
+          <SearchAllOption selected hidden>
+            All
+          </SearchAllOption>
+          <SearchAllOption>All Items</SearchAllOption>
           <SearchAllOption>artsasdfasdf</SearchAllOption>
           <SearchAllOption>bodyasdfasdf</SearchAllOption>
           <SearchAllOption>eroorasdfasdf</SearchAllOption>
           <SearchAllOption>fuck youasdfasdf</SearchAllOption>
           <SearchAllOption>my selfasdfasdfsadf</SearchAllOption>
         </SearchAllSec>
-        <SearchInput></SearchInput>
+        <SearchInput
+          onFocus={() => {
+            console.log("asdf");
+            setCheck(!check);
+          }}
+          onBlur={() => {
+            console.log("1");
+            setCheck(!check);
+          }}
+        />
         <SearchBtn>
           <SearchBtnImg src={Glass} />
         </SearchBtn>

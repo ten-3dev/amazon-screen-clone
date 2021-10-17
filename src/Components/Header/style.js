@@ -14,19 +14,22 @@ const HeaderView = styled.div`
 
 const HeaderItemLogo = styled.img`
   height: 30px;
-  padding: 10px;
+  padding: 8px;
   border-radius: 2px;
   &:hover {
-    border: 1px solid white;
+    outline: 1px solid white;
   }
+  cursor: pointer;
 `;
 
 const DeliverSec = styled.div`
   display: flex;
+  height: 30px;
   flex-direction: row;
   align-items: flex-end;
   padding: 8px;
   border-radius: 2px;
+  cursor: pointer;
   &:hover {
     border: 1px solid white;
   }
@@ -67,6 +70,12 @@ const SearchSec = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 5px;
+  ${props => {
+    if (props.foc) {
+      return "outline: 3px solid orange";
+    }
+  }}
 `;
 
 const SearchAllSec = styled.select`
@@ -78,17 +87,33 @@ const SearchAllSec = styled.select`
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding-left: 10px;
   border: 0;
+  text-indent: 13px;
+  cursor: pointer;
+  &:hover {
+    background-color: #cecece;
+  }
+  &:focus {
+    outline-color: orange;
+    outline-style: solid;
+    outline-width: 3px;
+    margin-right: 3px;
+  }
 `;
 
 const SearchAllImg = styled.img`
-  width: 20px;
-  height: 20px;
-  object-fit: cotain;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  margin-left: 40px;
+  &:hover + select {
+    background-color: #cecece;
+  }
 `;
 
-const SearchAllOption = styled.option``;
+const SearchAllOption = styled.option`
+  background-color: white;
+`;
 
 const SearchInput = styled.input`
   flex: 1;
@@ -98,7 +123,14 @@ const SearchInput = styled.input`
   border-top: 0;
   border-bottom: 0;
   border-right: 0;
-  padding: 0;
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  &:focus {
+    outline-style: none;
+  }
 `;
 
 const SearchBtn = styled.button`
@@ -108,6 +140,10 @@ const SearchBtn = styled.button`
   border: 0;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #ffa633;
+  }
 `;
 
 const SearchBtnImg = styled.img`
