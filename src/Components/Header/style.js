@@ -31,7 +31,7 @@ const DeliverSec = styled.div`
   border-radius: 2px;
   cursor: pointer;
   &:hover {
-    border: 1px solid white;
+    outline: 1px solid white;
   }
 `;
 const DeliverImg = styled.img`
