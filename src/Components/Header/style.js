@@ -30,6 +30,7 @@ const DeliverSec = styled.div`
   padding: 8px;
   border-radius: 2px;
   cursor: pointer;
+  white-space: nowrap;
   &:hover {
     outline: 1px solid white;
   }
@@ -65,7 +66,7 @@ const DeliverText = styled.div`
 `;
 
 const SearchSec = styled.div`
-  width: 45%;
+  width: 62%;
   height: 40px;
   display: flex;
   flex-direction: row;
@@ -152,6 +153,78 @@ const SearchBtnImg = styled.img`
   object-fit: cotain;
 `;
 
+const ReturnsBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+  padding: 8px;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  &:hover {
+    outline: 1px solid white;
+  }
+`;
+
+const ReturnsText = styled.span`
+  color: white;
+  font-size: ${props => {
+    if (props.bold) {
+      return "14px";
+    }
+    return "12px";
+  }};
+  font-weight: ${props => {
+    if (props.bold) {
+      return "bold";
+    }
+  }};
+`;
+
+const ShopBagBox = styled.div`
+  height: 30px;
+  display: flex;
+  align-items: flex-end;
+  padding: 8px;
+  padding-right: 15px;
+  border-radius: 2px;
+  cursor: pointer;
+  &:hover {
+    outline: 1px solid white;
+  }
+`;
+
+const ShopBagTitle = styled.span`
+  color: white;
+  font-weight: 600;
+  margin-left: 4px;
+  font-size: 14px;
+  @media screen and (max-width: 1050px) {
+    display: none;
+  }
+`;
+
+const ShopBagImgBox = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const ShopBagImg = styled.img`
+  height: 100%;
+`;
+
+const ShopBagCount = styled.span`
+  display: flex;
+  flex-direction: column;
+  color: orange;
+  font-weight: 600;
+  position: absolute;
+  margin-left: 6px;
+  margin-top: -5px;
+`;
+
 export {
   HeaderView,
   HeaderItemLogo,
@@ -165,5 +238,12 @@ export {
   SearchInput,
   SearchBtn,
   SearchBtnImg,
-  SearchAllOption
+  SearchAllOption,
+  ReturnsBox,
+  ReturnsText,
+  ShopBagBox,
+  ShopBagImgBox,
+  ShopBagImg,
+  ShopBagCount,
+  ShopBagTitle
 };

@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 
-import { Location, Logo, Glass, Arrow } from "../../Assets/index";
+import { Location, Logo, Glass, Arrow, ShopBag } from "../../Assets/index";
+import { CountryPopup, SignInPopup } from "../Popup";
 
 import {
   HeaderView,
@@ -15,7 +16,14 @@ import {
   SearchBtn,
   SearchBtnImg,
   SearchAllOption,
-  SearchAllImg
+  SearchAllImg,
+  ReturnsBox,
+  ReturnsText,
+  ShopBagBox,
+  ShopBagImgBox,
+  ShopBagImg,
+  ShopBagCount,
+  ShopBagTitle
 } from "./style";
 
 const Header = props => {
@@ -40,7 +48,7 @@ const Header = props => {
       <SearchSec foc={check}>
         <SearchAllImg src={Arrow} onClick={handleClick} />
         <SearchAllSec ref={focus}>
-          <SearchAllOption selected hidden>
+          <SearchAllOption defaultChecked hidden>
             All
           </SearchAllOption>
           <SearchAllOption>All Items</SearchAllOption>
@@ -64,6 +72,19 @@ const Header = props => {
           <SearchBtnImg src={Glass} />
         </SearchBtn>
       </SearchSec>
+      <CountryPopup />
+      <SignInPopup />
+      <ReturnsBox>
+        <ReturnsText>Returns</ReturnsText>
+        <ReturnsText bold="T">& Order</ReturnsText>
+      </ReturnsBox>
+      <ShopBagBox>
+        <ShopBagImgBox>
+          <ShopBagCount>0</ShopBagCount>
+          <ShopBagImg src={ShopBag} />
+        </ShopBagImgBox>
+        <ShopBagTitle>Cart</ShopBagTitle>
+      </ShopBagBox>
     </HeaderView>
   );
 };
