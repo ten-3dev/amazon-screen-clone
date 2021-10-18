@@ -14,7 +14,7 @@ const LanguageBox = styled.div`
 `;
 
 const LanguageImg = styled.img`
-  height: 65%;
+  height: 50%;
 `;
 
 const LanguageText = styled.span`
@@ -67,6 +67,7 @@ const LanguagePopupSelectedBox = styled.div`
   height: 30px;
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 const LanguagePopupSelectedText = styled.span`
@@ -84,7 +85,6 @@ const LanguagePopupSelectedBtn = styled.input`
 `;
 
 const LanguagePopupAnotherView = styled.div`
-  margin-top: 5px;
   height: 30px;
   font-size: 13px;
   display: flex;
@@ -203,8 +203,7 @@ const SignInViewSymbol = styled.span`
 
 const SignBox = styled.div`
   width: 500px;
-  height: 400px;
-  background-color: gray;
+  height: 360px;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
@@ -217,10 +216,12 @@ const SignBox = styled.div`
 
 const SignBtn = styled.button`
   width: 190px;
-  height: 40px;
+  height: 50px;
   outline: 0;
   border-radius: 5px;
   font-size: 14px;
+  background-color: yellow;
+  border: 1px solid darkyellow;
 `;
 
 const CustomerBox = styled.div`
@@ -263,6 +264,24 @@ const SubInfoRight = styled.div`
   flex: 1;
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 15px;
+`;
+
+const SubInfoTitle = styled.div`
+  font-weight: bold;
+  margin-bottom: 15px;
+`;
+
+const SubInfoSubTitle = styled.a`
+  display: block;
+  font-size: 12px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  &:hover {
+    color: rgb(255, 69, 0);
+    text-decoration: underline;
+  }
 `;
 
 export {
@@ -299,5 +318,7 @@ export {
   CustomerTitle,
   SubInfoBox,
   SubInfoLeft,
-  SubInfoRight
+  SubInfoRight,
+  SubInfoTitle,
+  SubInfoSubTitle
 };

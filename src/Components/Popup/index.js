@@ -36,7 +36,9 @@ import {
   CustomerTitle,
   SubInfoBox,
   SubInfoLeft,
-  SubInfoRight
+  SubInfoRight,
+  SubInfoTitle,
+  SubInfoSubTitle
 } from "./style";
 
 const CountryPopup = () => {
@@ -138,8 +140,48 @@ const SignInPopup = () => {
           <CustomerCreate href="www.naver.com">Start here.</CustomerCreate>
         </CustomerBox>
         <SubInfoBox>
-          <SubInfoLeft></SubInfoLeft>
-          <SubInfoRight></SubInfoRight>
+          <SubInfoLeft>
+            <SubInfoTitle>Your Lists</SubInfoTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Create a List
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Find a List Or Registry
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              AmazonSmile Charity Lists
+            </SubInfoSubTitle>
+          </SubInfoLeft>
+          <SubInfoRight>
+            <SubInfoTitle>Your Account</SubInfoTitle>
+            <SubInfoSubTitle href="www.naver.com">Account</SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">Orders</SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Recommendations
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Browsing History
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">Watchlist</SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Video Purchases & Rentals
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Kindle Unlimited
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Content & Devices
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Subscribe & Save Items
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Memberships & Subscriptions
+            </SubInfoSubTitle>
+            <SubInfoSubTitle href="www.naver.com">
+              Music Library
+            </SubInfoSubTitle>
+          </SubInfoRight>
         </SubInfoBox>
       </SignBox>
     </StyledPopup>
