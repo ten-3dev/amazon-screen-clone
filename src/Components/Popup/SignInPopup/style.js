@@ -62,11 +62,11 @@ const SignBtn = styled.button`
   width: 190px;
   height: 50px;
   outline: 0;
-  border-radius: 5px;
+  border-radius: 3px;
   font-size: 14px;
-  background-color: yellow;
-  border: 1px solid darkyellow;
+  background: linear-gradient(to bottom, #f8e4b1, #f0c14c);
   cursor: pointer;
+  border: 1px solid #846a29;
 `;
 
 const CustomerBox = styled.div`

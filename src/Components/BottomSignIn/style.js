@@ -33,8 +33,8 @@ const BottomSignInSecBtn = styled.button`
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
-  background-color: yellow;
-  border: 1px solid darkyellow;
+  background: linear-gradient(to bottom, #f8e4b1, #f0c14c);
+  border: 1px solid #846a29;
   margin-top: 5px;
   cursor: pointer;
 `;
