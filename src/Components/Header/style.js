@@ -186,7 +186,6 @@ const ShopBagBox = styled.div`
   display: flex;
   align-items: flex-end;
   padding: 8px;
-  padding-right: 15px;
   border-radius: 2px;
   cursor: pointer;
   &:hover {

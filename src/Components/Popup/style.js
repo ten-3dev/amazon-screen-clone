@@ -212,6 +212,7 @@ const SignBox = styled.div`
   padding-bottom: 10px;
   padding-left: 15px;
   padding-right: 15px;
+  background-color: white;
 `;
 
 const SignBtn = styled.button`
