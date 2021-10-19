@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 
 import { Location, Logo, Glass, Arrow, ShopBag } from "../../Assets/index";
-import { CountryPopup, SignInPopup } from "../Popup";
+import { CountryPopup } from "../../Components/Popup/ConuntryPopup/index";
+import SignInPopup from "../../Components/Popup/SignInPopup/index";
 
 import {
   HeaderView,

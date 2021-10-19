@@ -5,5 +5,7 @@ import Arrow from "./files/arrow.png";
 import Country from "./files/korea.png";
 import ShopBag from "./files/shopBag.png";
 import Menu from "./files/menu.png";
+import World from "./files/world.png";
+import Dollar from "./files/dollar.png";
 
-export { Logo, Location, Glass, Arrow, Country, ShopBag, Menu };
+export { Logo, Location, Glass, Arrow, Country, ShopBag, Menu, World, Dollar };
