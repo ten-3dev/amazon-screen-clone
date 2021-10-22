@@ -14,7 +14,8 @@ const MainBannerBox = styled.div`
   white-space: nowrap;
   // overflow-x: scroll;
   // overflow: hidden;
-  // transform: translateX(-50%);
+  // transform: translateX(0%);
+  // margin-left: -3000px;
 `;
 
 const SlideRightBtn = styled.div`
@@ -51,7 +52,6 @@ const Item = styled.img`
   width: 1500px;
   height: 600px;
   display: inline-block;
-  z-index: -1;
 `;
 
 const BtnBox = styled.div`
@@ -59,6 +59,7 @@ const BtnBox = styled.div`
   width: 1500px;
   display: flex;
   justify-content: space-between;
+  // background-color: red;
 `;
 
 export {
