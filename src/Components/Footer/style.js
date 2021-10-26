@@ -25,6 +25,9 @@ const ShortcutBox = styled.div`
   height: 400px;
   justify-content: center;
   display: flex;
+  @media screen and (max-width: 1000px) {
+    width: 1000px;
+  }
 `;
 const ShortcutSec = styled.div`
   display: flex;
@@ -56,6 +59,10 @@ const SummaryBox = styled.div`
   justify-content: center;
   background-color: #232f3e;
   border-top: 1px solid rgba(100, 100, 100, 0.5);
+  white-space: nowrap;
+  @media screen and (max-width: 1000px) {
+    width: 1000px;
+  }
 `;
 
 const SummaryBoxImg = styled.img`

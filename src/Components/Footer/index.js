@@ -64,7 +64,6 @@ const Footer = props => {
           <ShortcutSecText>Your Orders</ShortcutSecText>
           <ShortcutSecText>Shipping Rates & Policies</ShortcutSecText>
           <ShortcutSecText>Returns & Replacements</ShortcutSecText>
-          <ShortcutSecText>Manage Your Content and Devices</ShortcutSecText>
           <ShortcutSecText>Amazon Assistant</ShortcutSecText>
           <ShortcutSecText>Help</ShortcutSecText>
         </ShortcutSec>
