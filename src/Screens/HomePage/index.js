@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import Header from "../../Components/Header";
 import Category from "../../Components/Category";
@@ -23,12 +23,8 @@ let ImgArr = [
 ];
 
 const HomePage = props => {
-  useEffect(() => {
-    ImgArr.unshift(ImgArr[ImgArr.length - 1]);
-    console.log(ImgArr);
-  }, []);
 
-  const [moveNum, setMoveNum] = useState(-100);
+  const [moveNum, setMoveNum] = useState(0);
   const [count, setCount] = useState({
     right: 0,
     left: 0
@@ -42,12 +38,17 @@ const HomePage = props => {
     <BannerImg img={url} key={key} style={styles} />
   ));
 
+  //뒤로 무한루프는 아직... 이따가 할꺼고 일단은 안되게 막아만 놓았음
   const MoveBannerFunc = way => {
     if (way === "right") {
-      ImgArr.push(ImgArr[count.right]);
       setCount({ ...count, right: count.right + 1 });
+      ImgArr.push(ImgArr[count.right]);
       setMoveNum(moveNum + -100);
     } else if (way === "left") {
+      if(count.left === count.right){
+        return;
+      }
+      setCount({ ...count, left: count.left + 1});
       setMoveNum(moveNum + 100);
     }
   };
