@@ -61,11 +61,9 @@ const Header = props => {
         </SearchAllSec>
         <SearchInput
           onFocus={() => {
-            console.log("asdf");
             setCheck(!check);
           }}
           onBlur={() => {
-            console.log("1");
             setCheck(!check);
           }}
         />

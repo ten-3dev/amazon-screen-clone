@@ -1,5 +1,14 @@
 import styled from "styled-components";
 
+const HomePageMain = styled.div`
+  width: 100%;
+  height: 1130px;
+  background-color: red;
+  position: absolute;
+  z-index: 3;
+`;
+
+
 const BannerBackground = styled.div`
   width: 100%;
   height: 600px;
@@ -26,7 +35,6 @@ const BannerImg = styled.div`
   height: 100%;
   transition: 0.3s;
   display: inline-block;
-  // transform: translateX(-100%);
   background-image: 
   linear-gradient(transparent, transparent, white),
   url(
@@ -95,4 +103,4 @@ const ArrowImg = styled.img`
     }}
 `;
 
-export { BannerBackground, BannerFlame, BannerImg, BtnBox, RightMoveBtn, LeftMoveBtn, ArrowImg};
+export {HomePageMain, BannerBackground, BannerFlame, BannerImg, BtnBox, RightMoveBtn, LeftMoveBtn, ArrowImg};

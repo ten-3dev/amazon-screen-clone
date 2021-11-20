@@ -85,6 +85,8 @@ const SearchAllSec = styled.select`
   background-color: #f3f3f3;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -124,6 +126,7 @@ const SearchInput = styled.input`
   border-top: 0;
   border-bottom: 0;
   border-right: 0;
+  border-radius: 0;
   font-size: 20px;
   padding-left: 5px;
   padding-top: 0;
@@ -141,6 +144,8 @@ const SearchBtn = styled.button`
   border: 0;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
   cursor: pointer;
   &:hover {
     background-color: #ffa633;

@@ -34,8 +34,6 @@ const SignInPopup = () => {
       position="bottom right"
       closeOnDocumentClick
       on="hover"
-      onOpen={() => console.log("asdf")}
-      onClose={() => console.log("asdf1")}
     >
       <SignBox>
         <SignBtn>Sign in</SignBtn>

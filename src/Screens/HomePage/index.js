@@ -6,6 +6,7 @@ import BottomSignIn from "../../Components/BottomSignIn";
 import Footer from "../../Components/Footer";
 
 import {
+  HomePageMain,
   BannerBackground,
   BannerFlame,
   BannerImg,
