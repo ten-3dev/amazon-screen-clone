@@ -46,7 +46,6 @@ const SignInViewSymbol = styled.span`
 
 const SignBox = styled.div`
   width: 500px;
-  height: 360px;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
