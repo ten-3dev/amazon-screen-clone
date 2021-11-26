@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
+const HomePageBackground = styled.div`
+
+`
+
 const HomePageMain = styled.div`
   width: 100%;
   height: 1130px;
-  background-color: red;
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   z-index: 3;
 `;
@@ -103,4 +107,4 @@ const ArrowImg = styled.img`
     }}
 `;
 
-export {HomePageMain, BannerBackground, BannerFlame, BannerImg, BtnBox, RightMoveBtn, LeftMoveBtn, ArrowImg};
+export {HomePageMain, BannerBackground, BannerFlame, BannerImg, BtnBox, RightMoveBtn, LeftMoveBtn, ArrowImg, HomePageBackground};

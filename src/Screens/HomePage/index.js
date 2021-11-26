@@ -6,6 +6,7 @@ import BottomSignIn from "../../Components/BottomSignIn";
 import Footer from "../../Components/Footer";
 
 import {
+  HomePageBackground,
   HomePageMain,
   BannerBackground,
   BannerFlame,
@@ -55,9 +56,10 @@ const HomePage = props => {
   };
 
   return (
-    <>
+    <HomePageBackground>
       <Header />
       <Category />
+      <HomePageMain/>
       <BannerBackground>
         <BannerFlame>
           <BtnBox>
@@ -73,7 +75,7 @@ const HomePage = props => {
       </BannerBackground>
       <BottomSignIn />
       <Footer />
-    </>
+    </HomePageBackground>
   );
 };
 
