@@ -7,7 +7,8 @@ import ShopBag from "./files/shopBag.png";
 import Menu from "./files/menu.png";
 import World from "./files/world.png";
 import Dollar from "./files/dollar.png";
-import BannerArrow from "./files/BannerArrow.png";
+import BannerLeftArrow from "./files/left.png";
+import BannerRightArrow from "./files/right.png";
 
 export {
   Logo,
@@ -19,5 +20,6 @@ export {
   Menu,
   World,
   Dollar,
-  BannerArrow
+  BannerLeftArrow,
+  BannerRightArrow
 };

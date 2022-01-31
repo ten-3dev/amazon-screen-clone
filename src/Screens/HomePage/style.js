@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Slider from "react-slick";
+import { BannerLeftArrow, BannerRightArrow } from "../../Assets";
 
 export const HomePageBackground = styled.div``;
 
@@ -14,32 +15,26 @@ export const SliderCustom = styled(Slider)`
   .slick-slide div {
     outline: none;
   }
-  .slick-next {
-    width: 34px;
-    height: 52px;
-    /* width: 80px;
-    height: 280px; */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("https://m.media-amazon.com/images/S/sash/ydDD9hnRfziI$y7.png");
-    transform: translate(0, -50%) rotate(180deg);
-    top: 125px;
-    z-index: 1;
-    right: 20px;
-  }
+
+  .slick-next,
   .slick-prev {
     width: 34px;
     height: 52px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("https://m.media-amazon.com/images/S/sash/ydDD9hnRfziI$y7.png");
-    top: 125px;
+    position: static;
+    background-size: contain;
+    top: 0;
     z-index: 1;
-    left: 20px;
   }
-  .slick-next::before {
-    display: none;
+
+  .slick-next {
+    background-image: url(${BannerRightArrow});
   }
+
+  .slick-prev {
+    background-image: url(${BannerLeftArrow});
+  }
+
+  .slick-next::before,
   .slick-prev::before {
     display: none;
   }
@@ -61,6 +56,20 @@ export const BannerImg = styled.img`
   object-fit: contain;
 `;
 
-export const BannerArrow = styled.div`
-  display: "block";
+export const BannerArrowBox = styled.div`
+  width: 80px;
+  height: 250px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+  ${props => {
+    if (props.direc === "next") return "right: 0;";
+    else if (props.direc === "prev") return "left: 0;";
+  }}
 `;
+
+export const BannerArrow = styled.div``;

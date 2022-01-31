@@ -9,12 +9,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 const NextArrow = props => {
   const { className, onClick } = props;
-  return <Styles.BannerArrow className={className} onClick={onClick} />;
+  return (
+    <Styles.BannerArrowBox onClick={onClick} direc="next">
+      <Styles.BannerArrow className={className} />
+    </Styles.BannerArrowBox>
+  );
 };
 
 const PrevArrow = props => {
   const { className, onClick } = props;
-  return <Styles.BannerArrow className={className} onClick={onClick} />;
+  return (
+    <Styles.BannerArrowBox onClick={onClick} direc="prev">
+      <Styles.BannerArrow className={className} />
+    </Styles.BannerArrowBox>
+  );
 };
 
 const HomePage = () => {
@@ -24,6 +32,7 @@ const HomePage = () => {
     "https://m.media-amazon.com/images/I/61rSRZL9kaL._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/610aFo74RdL._SX3000_.jpg"
   ];
+
   const settings = {
     infinite: true,
     speed: 200,
