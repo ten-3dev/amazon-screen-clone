@@ -7,24 +7,6 @@ import Footer from "../../Components/Footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const NextArrow = props => {
-  const { className, onClick } = props;
-  return (
-    <Styles.BannerArrowBox onClick={onClick} direc="next">
-      <Styles.BannerArrow className={className} />
-    </Styles.BannerArrowBox>
-  );
-};
-
-const PrevArrow = props => {
-  const { className, onClick } = props;
-  return (
-    <Styles.BannerArrowBox onClick={onClick} direc="prev">
-      <Styles.BannerArrow className={className} />
-    </Styles.BannerArrowBox>
-  );
-};
-
 const HomePage = () => {
   const BannerList = [
     "https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg",
@@ -33,11 +15,31 @@ const HomePage = () => {
     "https://m.media-amazon.com/images/I/610aFo74RdL._SX3000_.jpg"
   ];
 
+  const NextArrow = props => {
+    const { className, onClick } = props;
+    return (
+      <Styles.BannerArrowBox onClick={onClick} direc="next">
+        <Styles.BannerArrow className={className} />
+      </Styles.BannerArrowBox>
+    );
+  };
+
+  const PrevArrow = props => {
+    const { className, onClick } = props;
+    return (
+      <Styles.BannerArrowBox onClick={onClick} direc="prev">
+        <Styles.BannerArrow className={className} />
+      </Styles.BannerArrowBox>
+    );
+  };
+
   const settings = {
     infinite: true,
     speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />
   };

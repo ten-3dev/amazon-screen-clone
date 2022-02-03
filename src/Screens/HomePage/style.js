@@ -24,6 +24,7 @@ export const SliderCustom = styled(Slider)`
     background-size: contain;
     top: 0;
     z-index: 1;
+    background-repeat: no-repeat;
   }
 
   .slick-next {
