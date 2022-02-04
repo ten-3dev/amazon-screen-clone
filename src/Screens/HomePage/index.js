@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef } from "react";
 import * as Styles from "./style";
 import Header from "../../Components/Header";
 import Category from "../../Components/Category";
@@ -8,6 +8,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const HomePage = () => {
+  const slickRef = useRef();
+
   const BannerList = [
     "https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/61nfpX0p23L._SX3000_.jpg",
@@ -18,7 +20,10 @@ const HomePage = () => {
   const NextArrow = props => {
     const { className, onClick } = props;
     return (
-      <Styles.BannerArrowBox onClick={onClick} direc="next">
+      <Styles.BannerArrowBox onClick={() => {
+        onClick();
+        slickRef.current.slickPause();
+      }} direc="next">
         <Styles.BannerArrow className={className} />
       </Styles.BannerArrowBox>
     );
@@ -27,7 +32,10 @@ const HomePage = () => {
   const PrevArrow = props => {
     const { className, onClick } = props;
     return (
-      <Styles.BannerArrowBox onClick={onClick} direc="prev">
+      <Styles.BannerArrowBox onClick={() => {
+        onClick();
+        slickRef.current.slickPause();
+      }} direc="prev">
         <Styles.BannerArrow className={className} />
       </Styles.BannerArrowBox>
     );
@@ -41,7 +49,8 @@ const HomePage = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+
   };
 
   return (
@@ -50,7 +59,7 @@ const HomePage = () => {
       <Category />
       <Styles.HomePageBackground>
         <Styles.BannerBackground>
-          <Styles.SliderCustom {...settings}>
+          <Styles.SliderCustom {...settings} ref={slickRef}>
             {BannerList.map((url, idx) => {
               return <Styles.BannerItem img={url} key={idx} />;
             })}
