@@ -1,4 +1,4 @@
-import React, {useRef } from "react";
+import React, { useRef } from "react";
 import * as Styles from "./style";
 import Header from "../../Components/Header";
 import Category from "../../Components/Category";
@@ -17,13 +17,20 @@ const HomePage = () => {
     "https://m.media-amazon.com/images/I/610aFo74RdL._SX3000_.jpg"
   ];
 
+  const ArrowOnClick = (clickEvent, direc) => {
+    return {
+      onClick: () => {
+        clickEvent();
+        slickRef.current.slickPause();
+      },
+      direc: direc
+    };
+  };
+
   const NextArrow = props => {
     const { className, onClick } = props;
     return (
-      <Styles.BannerArrowBox onClick={() => {
-        onClick();
-        slickRef.current.slickPause();
-      }} direc="next">
+      <Styles.BannerArrowBox {...ArrowOnClick(onClick, "next")}>
         <Styles.BannerArrow className={className} />
       </Styles.BannerArrowBox>
     );
@@ -32,10 +39,7 @@ const HomePage = () => {
   const PrevArrow = props => {
     const { className, onClick } = props;
     return (
-      <Styles.BannerArrowBox onClick={() => {
-        onClick();
-        slickRef.current.slickPause();
-      }} direc="prev">
+      <Styles.BannerArrowBox {...ArrowOnClick(onClick, "prev")}>
         <Styles.BannerArrow className={className} />
       </Styles.BannerArrowBox>
     );
@@ -49,8 +53,7 @@ const HomePage = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
-
+    prevArrow: <PrevArrow />
   };
 
   return (
