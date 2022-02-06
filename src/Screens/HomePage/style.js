@@ -12,19 +12,15 @@ export const BannerBackground = styled.div`
 `;
 
 export const SliderCustom = styled(Slider)`
-  .slick-slide div {
-    outline: none;
-  }
-
   .slick-next,
   .slick-prev {
     width: 34px;
     height: 52px;
-    position: static;
     background-size: contain;
-    top: 0;
-    z-index: 1;
     background-repeat: no-repeat;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
   }
 
   .slick-next {
@@ -63,8 +59,6 @@ export const BannerArrowBox = styled.div`
   position: absolute;
   top: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   z-index: 1;
   ${props => {
