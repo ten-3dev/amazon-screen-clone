@@ -61,10 +61,16 @@ export const BannerArrowBox = styled.div`
   display: flex;
   cursor: pointer;
   z-index: 1;
+
+  :focus-within {
+    box-shadow: inset 0 0 0 2px #fff, inset 0 0 0 4px #008296;
+    border-radius: 4px;
+  }
+
   ${props => {
     if (props.direc === "next") return "right: 0;";
     else if (props.direc === "prev") return "left: 0;";
   }}
 `;
 
-export const BannerArrow = styled.div``;
+export const BannerArrow = styled.input``;

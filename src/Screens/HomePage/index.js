@@ -9,7 +9,12 @@ import "slick-carousel/slick/slick-theme.css";
 
 const HomePage = () => {
   const slickRef = useRef();
+  const arrowRef = {
+    next: useRef(),
+    prev: useRef()
+  };
 
+  //배너 이미지 배열
   const BannerList = [
     "https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg",
     "https://m.media-amazon.com/images/I/61nfpX0p23L._SX3000_.jpg",
@@ -17,21 +22,28 @@ const HomePage = () => {
     "https://m.media-amazon.com/images/I/610aFo74RdL._SX3000_.jpg"
   ];
 
-  const ArrowOnClick = (clickEvent, direc) => {
+  //이벤트 분리 (가독성)
+  const ArrowOnClick = (clickEvent, type) => {
     return {
       onClick: () => {
         clickEvent();
         slickRef.current.slickPause();
+        if (type === "next") arrowRef.next.current.focus();
+        else arrowRef.prev.current.focus();
       },
-      direc: direc
+      direc: type
     };
   };
 
+  //화살표 함수
   const CustomArrow = props => {
     const { onClick, className, type } = props;
     return (
       <Styles.BannerArrowBox {...ArrowOnClick(onClick, type)}>
-        <Styles.BannerArrow className={className} />
+        <Styles.BannerArrow
+          className={className}
+          ref={type === "next" ? arrowRef.next : arrowRef.prev}
+        />
       </Styles.BannerArrowBox>
     );
   };
