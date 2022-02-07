@@ -27,19 +27,10 @@ const HomePage = () => {
     };
   };
 
-  const NextArrow = props => {
-    const { className, onClick } = props;
+  const CustomArrow = props => {
+    const { onClick, className, type } = props;
     return (
-      <Styles.BannerArrowBox {...ArrowOnClick(onClick, "next")}>
-        <Styles.BannerArrow className={className} />
-      </Styles.BannerArrowBox>
-    );
-  };
-
-  const PrevArrow = props => {
-    const { className, onClick } = props;
-    return (
-      <Styles.BannerArrowBox {...ArrowOnClick(onClick, "prev")}>
+      <Styles.BannerArrowBox {...ArrowOnClick(onClick, type)}>
         <Styles.BannerArrow className={className} />
       </Styles.BannerArrowBox>
     );
@@ -52,8 +43,8 @@ const HomePage = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    nextArrow: <CustomArrow type="next" />,
+    prevArrow: <CustomArrow type="prev" />
   };
 
   return (
