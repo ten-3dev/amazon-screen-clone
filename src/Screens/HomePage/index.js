@@ -63,15 +63,18 @@ const HomePage = () => {
     <>
       <Header />
       <Category />
-      <Styles.HomePageBackground>
-        <Styles.BannerBackground>
+      <Styles.HomePageWrapper>
+        <Styles.BannerBox>
           <Styles.SliderCustom {...settings} ref={slickRef}>
             {BannerList.map((url, idx) => {
               return <Styles.BannerItem img={url} key={idx} />;
             })}
           </Styles.SliderCustom>
-        </Styles.BannerBackground>
-      </Styles.HomePageBackground>
+        </Styles.BannerBox>
+        <Styles.MainBox>
+          <Styles.MainSec></Styles.MainSec>
+        </Styles.MainBox>
+      </Styles.HomePageWrapper>
       <BottomSignIn />
       <Footer />
     </>
