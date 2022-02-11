@@ -52,6 +52,7 @@ const BottomSignInSecNewSecBtn = styled.span`
   font-size: 12px;
   margin-left: 5px;
   color: #37a6dc;
+  cursor: pointer;
 `;
 
 export {
