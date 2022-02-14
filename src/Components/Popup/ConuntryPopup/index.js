@@ -4,7 +4,10 @@ import { Country } from "../../../Assets/index";
 
 const ConuntryPopupView = ({ setIsOpen, show }) => {
   return (
-    <Styles.LanguagePopupWrapper onMouseLeave={() => setIsOpen(false)}>
+    <Styles.LanguagePopupWrapper
+      show={show}
+      onMouseLeave={() => setIsOpen(false)}
+    >
       <Styles.LanguagePopupBox>
         <Styles.LanguagePopupView>
           <Styles.LanguagePopupTitle>Change language</Styles.LanguagePopupTitle>

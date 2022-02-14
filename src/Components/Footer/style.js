@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Popup from "reactjs-popup";
 
-const BackToTopBox = styled.div`
+export const BackToTopBox = styled.div`
   width: 100%;
   height: 45px;
   background-color: #37475a;
@@ -13,7 +13,7 @@ const BackToTopBox = styled.div`
   cursor: pointer;
   position: relative;
   z-index: 1;
-  
+
   &:hover {
     background-color: #4a607a;
   }
@@ -22,7 +22,7 @@ const BackToTopBox = styled.div`
   }
 `;
 
-const ShortcutBox = styled.div`
+export const ShortcutBox = styled.div`
   background-color: #232f3e;
   width: 100%;
   height: 400px;
@@ -34,19 +34,19 @@ const ShortcutBox = styled.div`
     width: 1000px;
   }
 `;
-const ShortcutSec = styled.div`
+export const ShortcutSec = styled.div`
   display: flex;
   flex-direction: column;
   padding: 50px;
 `;
 
-const ShortcutSecTitle = styled.div`
+export const ShortcutSecTitle = styled.div`
   color: white;
   font-size: 16px;
   font-weight: bold;
 `;
 
-const ShortcutSecText = styled.span`
+export const ShortcutSecText = styled.span`
   font-size: 13px;
   color: white;
   margin-top: 10px;
@@ -56,7 +56,7 @@ const ShortcutSecText = styled.span`
   }
 `;
 
-const SummaryBox = styled.div`
+export const SummaryBox = styled.div`
   width: 100%;
   height: 100px;
   display: flex;
@@ -70,18 +70,18 @@ const SummaryBox = styled.div`
   }
 `;
 
-const SummaryBoxImg = styled.img`
+export const SummaryBoxImg = styled.img`
   width: 75px;
   cursor: pointer;
   margin-right: 70px;
 `;
 
-const SummaryBtnSec = styled.div`
+export const SummaryBtnSec = styled.div`
   display: flex;
   justify-content: center;
 `;
 
-const SummaryBoxLensBtn = styled.div`
+export const SummaryBoxLensBtn = styled.div`
   cursor: pointer;
   margin-right: 10px;
   height: 30px;
@@ -95,16 +95,16 @@ const SummaryBoxLensBtn = styled.div`
   padding-left: 5px;
 `;
 
-const SummaryBoxLensBtnSymbolView = styled.div`
+export const SummaryBoxLensBtnSymbolView = styled.div`
   margin-left: 20px;
 `;
 
-const SummaryBoxLensBtnSymbol = styled.div`
+export const SummaryBoxLensBtnSymbol = styled.div`
   font-size: 1px;
   line-height: 8px;
 `;
 
-const SummaryBoxbtn = styled.div`
+export const SummaryBoxbtn = styled.div`
   cursor: pointer;
   height: 30px;
   display: flex;
@@ -117,40 +117,21 @@ const SummaryBoxbtn = styled.div`
   font-size: 13px;
 `;
 
-const SummaryBoxbtnImg = styled.img`
+export const SummaryBoxbtnImg = styled.img`
   width: 20px;
   margin-right: 5px;
 `;
 
-const SummaryBoxbtnImgMon = styled.img`
+export const SummaryBoxbtnImgMon = styled.img`
   width: 8px;
   padding-left: 10px;
   padding-right: 10px;
 `;
 
-const SummaryBoxbtnImgCou = styled.img`
+export const SummaryBoxbtnImgCou = styled.img`
   width: 18px;
   padding-left: 10px;
   padding-right: 10px;
 `;
 
-const StyledPopup = styled(Popup)``;
-
-export {
-  BackToTopBox,
-  ShortcutBox,
-  ShortcutSec,
-  ShortcutSecTitle,
-  ShortcutSecText,
-  SummaryBox,
-  SummaryBtnSec,
-  SummaryBoxImg,
-  SummaryBoxbtnImgMon,
-  SummaryBoxbtnImgCou,
-  SummaryBoxLensBtn,
-  SummaryBoxLensBtnSymbolView,
-  SummaryBoxLensBtnSymbol,
-  SummaryBoxbtn,
-  SummaryBoxbtnImg,
-  StyledPopup
-};
+export const StyledPopup = styled(Popup)``;

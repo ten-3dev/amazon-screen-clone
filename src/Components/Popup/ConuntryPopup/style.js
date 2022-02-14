@@ -36,10 +36,11 @@ export const StyledPopup = styled(Popup)`
 `;
 
 export const LanguagePopupWrapper = styled.div`
-  border-width: 0px 20px 20px;
   border-style: solid;
   border-color: transparent;
   margin-left: -20px;
+  border-width: ${props =>
+    props.show ? "20px 20px 0px 20px" : "0px 20px 20px"};
 `;
 
 export const LanguagePopupBox = styled.div`
