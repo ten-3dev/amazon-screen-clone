@@ -27,7 +27,7 @@ import {
   ShopBagTitle
 } from "./style";
 
-const Header = props => {
+const Header = () => {
   const [check, setCheck] = useState(false);
 
   const focus = useRef(null);

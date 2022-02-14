@@ -67,7 +67,7 @@ const HomePage = () => {
         <Styles.BannerBox>
           <Styles.SliderCustom {...settings} ref={slickRef}>
             {BannerList.map((url, idx) => {
-              return <Styles.BannerItem img={url} key={idx} />
+              return <Styles.BannerItem img={url} key={idx} />;
             })}
           </Styles.SliderCustom>
         </Styles.BannerBox>

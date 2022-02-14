@@ -25,7 +25,7 @@ export const LanguageText = styled.span`
 
 export const StyledPopup = styled(Popup)`
   &-overlay {
-    margin-top: 60px;
+    margin-top: 100px;
     background-color: rgba(0, 0, 0, 0.5);
   }
 `;

@@ -99,12 +99,14 @@ const ConuntryPopupView = props => {
 const CountryPopup = () => {
   return (
     <Styles.StyledPopup
-      trigger={open => (
-        <Styles.LanguageBox>
-          <Styles.LanguageImg src={Country} />
-          <Styles.LanguageText>&#9660;</Styles.LanguageText>
-        </Styles.LanguageBox>
-      )}
+      trigger={open => {
+        return (
+          <Styles.LanguageBox>
+            <Styles.LanguageImg src={Country} />
+            <Styles.LanguageText>&#9660;</Styles.LanguageText>
+          </Styles.LanguageBox>
+        );
+      }}
       position="bottom left"
       closeOnDocumentClick
       on="hover"

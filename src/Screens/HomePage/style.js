@@ -18,7 +18,7 @@ export const BannerBox = styled.div`
   left: 50%;
   margin-left: -750px;
 
-  @media screen and (max-width: 1500px) {
+  @media screen and (max-width: 1515px) {
     width: 100%;
     left: 0;
     margin-left: 0;
