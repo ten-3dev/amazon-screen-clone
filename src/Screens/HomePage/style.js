@@ -4,6 +4,9 @@ import { BannerLeftArrow, BannerRightArrow } from "../../Assets";
 
 export const HomePageWrapper = styled.div`
   position: relative;
+  @media screen and (max-width: 1000px) {
+    width: 1000px;
+  }
 `;
 
 export const BannerBox = styled.div`
