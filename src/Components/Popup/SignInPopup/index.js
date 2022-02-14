@@ -1,92 +1,85 @@
-import React from "react";
-
-import {
-  StyledPopup,
-  SignInBox,
-  SignInTitle,
-  SignInTextView,
-  SignInViewText,
-  SignInViewSymbol,
-  SignBox,
-  SignBtn,
-  CustomerBox,
-  CustomerCreate,
-  CustomerTitle,
-  SubInfoBox,
-  SubInfoLeft,
-  SubInfoRight,
-  SubInfoTitle,
-  SubInfoSubTitle
-} from "./style";
+import React, { useState } from "react";
+import * as Styles from "./style";
 
 const SignInPopup = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <StyledPopup
-      trigger={open => (
-        <SignInBox>
-          <SignInTitle>Hello, Sign in</SignInTitle>
-          <SignInTextView>
-            <SignInViewText>Account & Lists</SignInViewText>
-            <SignInViewSymbol>&#9660;</SignInViewSymbol>
-          </SignInTextView>
-        </SignInBox>
-      )}
-      position="bottom right"
-      closeOnDocumentClick
-      on="hover"
-    >
-      <SignBox>
-        <SignBtn>Sign in</SignBtn>
-        <CustomerBox>
-          <CustomerTitle>New customer? </CustomerTitle>
-          <CustomerCreate href="www.naver.com">Start here.</CustomerCreate>
-        </CustomerBox>
-        <SubInfoBox>
-          <SubInfoLeft>
-            <SubInfoTitle>Your Lists</SubInfoTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Create a List
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Find a List Or Registry
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              AmazonSmile Charity Lists
-            </SubInfoSubTitle>
-          </SubInfoLeft>
-          <SubInfoRight>
-            <SubInfoTitle>Your Account</SubInfoTitle>
-            <SubInfoSubTitle href="www.naver.com">Account</SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">Orders</SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Recommendations
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Browsing History
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">Watchlist</SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Video Purchases & Rentals
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Kindle Unlimited
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Content & Devices
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Subscribe & Save Items
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Memberships & Subscriptions
-            </SubInfoSubTitle>
-            <SubInfoSubTitle href="www.naver.com">
-              Music Library
-            </SubInfoSubTitle>
-          </SubInfoRight>
-        </SubInfoBox>
-      </SignBox>
-    </StyledPopup>
+    <Styles.StyledPopupWrapper onMouseEnter={() => setIsOpen(true)}>
+      <Styles.StyledPopup
+        open={isOpen}
+        trigger={() => (
+          <Styles.SignInBox>
+            <Styles.SignInTitle>Hello, Sign in</Styles.SignInTitle>
+            <Styles.SignInTextView>
+              <Styles.SignInViewText>Account & Lists</Styles.SignInViewText>
+              <Styles.SignInViewSymbol>&#9660;</Styles.SignInViewSymbol>
+            </Styles.SignInTextView>
+          </Styles.SignInBox>
+        )}
+        position="bottom right"
+        closeOnDocumentClick
+      >
+        <Styles.SignBox onMouseLeave={() => setIsOpen(false)}>
+          <Styles.SignBtn>Sign in</Styles.SignBtn>
+          <Styles.CustomerBox>
+            <Styles.CustomerTitle>New customer? </Styles.CustomerTitle>
+            <Styles.CustomerCreate href="www.naver.com">
+              Start here.
+            </Styles.CustomerCreate>
+          </Styles.CustomerBox>
+          <Styles.SubInfoBox>
+            <Styles.SubInfoLeft>
+              <Styles.SubInfoTitle>Your Lists</Styles.SubInfoTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Create a List
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Find a List Or Registry
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                AmazonSmile Charity Lists
+              </Styles.SubInfoSubTitle>
+            </Styles.SubInfoLeft>
+            <Styles.SubInfoRight>
+              <Styles.SubInfoTitle>Your Account</Styles.SubInfoTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Account
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Orders
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Recommendations
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Browsing History
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Watchlist
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Video Purchases & Rentals
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Kindle Unlimited
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Content & Devices
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Subscribe & Save Items
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Memberships & Subscriptions
+              </Styles.SubInfoSubTitle>
+              <Styles.SubInfoSubTitle href="www.naver.com">
+                Music Library
+              </Styles.SubInfoSubTitle>
+            </Styles.SubInfoRight>
+          </Styles.SubInfoBox>
+        </Styles.SignBox>
+      </Styles.StyledPopup>
+    </Styles.StyledPopupWrapper>
   );
 };
 

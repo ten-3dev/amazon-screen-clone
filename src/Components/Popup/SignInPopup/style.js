@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import Popup from "reactjs-popup";
 
-const StyledPopup = styled(Popup)`
+export const StyledPopupWrapper = styled.div``;
+
+export const StyledPopup = styled(Popup)`
   &-overlay {
-    margin-top: 60px;
+    z-index: 1 !important;
     background-color: rgba(0, 0, 0, 0.5);
+  }
+  &-content {
+    margin-top: -5px;
   }
 `;
 
-const SignInBox = styled.div`
+export const SignInBox = styled.div`
   height: 30px;
   display: flex;
   flex-direction: column;
@@ -21,22 +26,22 @@ const SignInBox = styled.div`
   }
 `;
 
-const SignInTitle = styled.span`
+export const SignInTitle = styled.span`
   color: white;
   font-size: 12px;
 `;
 
-const SignInTextView = styled.div`
+export const SignInTextView = styled.div`
   display: flex;
 `;
 
-const SignInViewText = styled.span`
+export const SignInViewText = styled.span`
   color: white;
   font-size: 14px;
   font-weight: 550;
 `;
 
-const SignInViewSymbol = styled.span`
+export const SignInViewSymbol = styled.span`
   color: gray;
   font-size: 4px;
   margin-left: 3px;
@@ -44,7 +49,7 @@ const SignInViewSymbol = styled.span`
   align-items: flex-end;
 `;
 
-const SignBox = styled.div`
+export const SignBox = styled.div`
   width: 500px;
   border-radius: 3px;
   display: flex;
@@ -57,7 +62,7 @@ const SignBox = styled.div`
   background-color: white;
 `;
 
-const SignBtn = styled.button`
+export const SignBtn = styled.button`
   width: 190px;
   height: 50px;
   outline: 0;
@@ -68,17 +73,17 @@ const SignBtn = styled.button`
   border: 1px solid #846a29;
 `;
 
-const CustomerBox = styled.div`
+export const CustomerBox = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 8px;
 `;
 
-const CustomerTitle = styled.div`
+export const CustomerTitle = styled.div`
   font-size: 12px;
 `;
 
-const CustomerCreate = styled.a`
+export const CustomerCreate = styled.a`
   font-size: 12px;
   margin-left: 5px;
   color: darkblue;
@@ -89,7 +94,7 @@ const CustomerCreate = styled.a`
   }
 `;
 
-const SubInfoBox = styled.div`
+export const SubInfoBox = styled.div`
   margin-top: 8px;
   width: 95%;
   height: 100%;
@@ -99,24 +104,24 @@ const SubInfoBox = styled.div`
   padding-top: 10px;
 `;
 
-const SubInfoLeft = styled.div`
+export const SubInfoLeft = styled.div`
   flex: 1;
   height: 100%;
 `;
 
-const SubInfoRight = styled.div`
+export const SubInfoRight = styled.div`
   flex: 1;
   height: 100%;
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   padding-left: 15px;
 `;
 
-const SubInfoTitle = styled.div`
+export const SubInfoTitle = styled.div`
   font-weight: bold;
   margin-bottom: 15px;
 `;
 
-const SubInfoSubTitle = styled.a`
+export const SubInfoSubTitle = styled.a`
   display: block;
   font-size: 12px;
   margin-bottom: 10px;
@@ -127,22 +132,3 @@ const SubInfoSubTitle = styled.a`
     text-decoration: underline;
   }
 `;
-
-export {
-  StyledPopup,
-  SignInBox,
-  SignInTitle,
-  SignInTextView,
-  SignInViewText,
-  SignInViewSymbol,
-  SignBox,
-  SignBtn,
-  CustomerBox,
-  CustomerCreate,
-  CustomerTitle,
-  SubInfoBox,
-  SubInfoLeft,
-  SubInfoRight,
-  SubInfoTitle,
-  SubInfoSubTitle
-};

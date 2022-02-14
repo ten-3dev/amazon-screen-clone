@@ -134,4 +134,6 @@ export const SummaryBoxbtnImgCou = styled.img`
   padding-right: 10px;
 `;
 
+export const StyledPopupWrapper = styled.div``;
+
 export const StyledPopup = styled(Popup)``;

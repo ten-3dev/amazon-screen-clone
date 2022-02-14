@@ -73,7 +73,7 @@ const Footer = () => {
       <Styles.SummaryBox>
         <Styles.SummaryBoxImg src={Logo} />
         <Styles.SummaryBtnSec>
-          <div onMouseEnter={() => setIsOpen(true)}>
+          <Styles.StyledPopupWrapper onMouseEnter={() => setIsOpen(true)}>
             <Styles.StyledPopup
               open={isOpen}
               trigger={() => (
@@ -97,7 +97,7 @@ const Footer = () => {
             >
               <ConuntryPopupView show={true} setIsOpen={setIsOpen} />
             </Styles.StyledPopup>
-          </div>
+          </Styles.StyledPopupWrapper>
           <Styles.SummaryBoxbtn>
             <Styles.SummaryBoxbtnImgMon src={Dollar} />
             USD - U.S. Doller
