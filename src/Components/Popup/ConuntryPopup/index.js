@@ -1,109 +1,116 @@
 import React from "react";
-
+import * as Styles from "./style";
 import { Country } from "../../../Assets/index";
-
-import {
-  LanguageBox,
-  LanguageImg,
-  LanguageText,
-  StyledPopup,
-  LanguagePopupBox,
-  LanguagePopupView,
-  LanguagePopupTitle,
-  LanguagePopupLearnMore,
-  LanguagePopupSelectedBox,
-  LanguagePopupSelectedText,
-  LanguagePopupSelectedBtn,
-  LanguagePopupAnotherView,
-  SelectView,
-  LanguagePopupAnotherText,
-  LanguagePopupAnotherBtn,
-  ChangeMoneyBox,
-  PopupAlearBox,
-  PopupAlearImg,
-  PopupAlearText,
-  ChangeCountryBox,
-  ChangeCountryText,
-  View
-} from "./style";
 
 const ConuntryPopupView = props => {
   return (
-    <LanguagePopupBox>
-      <LanguagePopupView>
-        <LanguagePopupTitle>Change language</LanguagePopupTitle>
-        <LanguagePopupLearnMore href="www.naver.com">
+    <Styles.LanguagePopupBox>
+      <Styles.LanguagePopupView>
+        <Styles.LanguagePopupTitle>Change language</Styles.LanguagePopupTitle>
+        <Styles.LanguagePopupLearnMore href="www.naver.com">
           Learn More
-        </LanguagePopupLearnMore>
-      </LanguagePopupView>
-      <LanguagePopupSelectedBox>
-        <LanguagePopupSelectedBtn type="radio" defaultChecked />
-        <LanguagePopupSelectedText>English - EN</LanguagePopupSelectedText>
-      </LanguagePopupSelectedBox>
-      <LanguagePopupAnotherView>
-        <LanguagePopupAnotherBtn type="radio" />
-        <SelectView />
-        <LanguagePopupAnotherText>English - EN (1)</LanguagePopupAnotherText>
-      </LanguagePopupAnotherView>
-      <LanguagePopupAnotherView>
-        <LanguagePopupAnotherBtn type="radio" />
-        <SelectView />
-        <LanguagePopupAnotherText>English - EN (2)</LanguagePopupAnotherText>
-      </LanguagePopupAnotherView>
-      <LanguagePopupAnotherView>
-        <LanguagePopupAnotherBtn type="radio" />
-        <SelectView />
-        <LanguagePopupAnotherText>English - EN (3)</LanguagePopupAnotherText>
-      </LanguagePopupAnotherView>
-      <LanguagePopupAnotherView>
-        <LanguagePopupAnotherBtn type="radio" />
-        <SelectView />
-        <LanguagePopupAnotherText>English - EN (4)</LanguagePopupAnotherText>
-      </LanguagePopupAnotherView>
-      <View show={props.show}>
-        <ChangeMoneyBox>
-          <LanguagePopupView>
-            <LanguagePopupTitle>Change currency</LanguagePopupTitle>
-            <LanguagePopupLearnMore href="www.naver.com">
+        </Styles.LanguagePopupLearnMore>
+      </Styles.LanguagePopupView>
+      <Styles.LanguagePopupRadioBox checked>
+        <Styles.LanguagePopupRadio>
+          <Styles.LanguagePopupRadioSelected />
+        </Styles.LanguagePopupRadio>
+        <Styles.LanguagePopupSelectedText checked>
+          English - EN
+        </Styles.LanguagePopupSelectedText>
+      </Styles.LanguagePopupRadioBox>
+      <Styles.LanguagePopupRadioListBox>
+        <Styles.LanguagePopupRadioBox>
+          <Styles.LanguagePopupRadio>
+            <Styles.LanguagePopupRadioSelected />
+          </Styles.LanguagePopupRadio>
+          <Styles.LanguagePopupSelectedText>
+            English - EN (1)
+          </Styles.LanguagePopupSelectedText>
+        </Styles.LanguagePopupRadioBox>
+        <Styles.LanguagePopupRadioBox>
+          <Styles.LanguagePopupRadio>
+            <Styles.LanguagePopupRadioSelected />
+          </Styles.LanguagePopupRadio>
+          <Styles.LanguagePopupSelectedText>
+            English - EN (1)
+          </Styles.LanguagePopupSelectedText>
+        </Styles.LanguagePopupRadioBox>
+        <Styles.LanguagePopupRadioBox>
+          <Styles.LanguagePopupRadio>
+            <Styles.LanguagePopupRadioSelected />
+          </Styles.LanguagePopupRadio>
+          <Styles.LanguagePopupSelectedText>
+            English - EN (1)
+          </Styles.LanguagePopupSelectedText>
+        </Styles.LanguagePopupRadioBox>
+        <Styles.LanguagePopupRadioBox>
+          <Styles.LanguagePopupRadio>
+            <Styles.LanguagePopupRadioSelected />
+          </Styles.LanguagePopupRadio>
+          <Styles.LanguagePopupSelectedText>
+            English - EN (1)
+          </Styles.LanguagePopupSelectedText>
+        </Styles.LanguagePopupRadioBox>
+        <Styles.LanguagePopupRadioBox>
+          <Styles.LanguagePopupRadio>
+            <Styles.LanguagePopupRadioSelected />
+          </Styles.LanguagePopupRadio>
+          <Styles.LanguagePopupSelectedText>
+            English - EN (1)
+          </Styles.LanguagePopupSelectedText>
+        </Styles.LanguagePopupRadioBox>
+      </Styles.LanguagePopupRadioListBox>
+      <Styles.View show={props.show}>
+        <Styles.ChangeMoneyBox>
+          <Styles.LanguagePopupView>
+            <Styles.LanguagePopupTitle>
+              Change currency
+            </Styles.LanguagePopupTitle>
+            <Styles.LanguagePopupLearnMore href="www.naver.com">
               Learn More
-            </LanguagePopupLearnMore>
-          </LanguagePopupView>
-          <LanguagePopupView position="between">
-            <LanguagePopupTitle>$ - USD - U.S. Dollar</LanguagePopupTitle>
-            <LanguagePopupLearnMore href="www.naver.com">
+            </Styles.LanguagePopupLearnMore>
+          </Styles.LanguagePopupView>
+          <Styles.LanguagePopupView position="between">
+            <Styles.LanguagePopupTitle>
+              $ - USD - U.S. Dollar
+            </Styles.LanguagePopupTitle>
+            <Styles.LanguagePopupLearnMore href="www.naver.com">
               Change
-            </LanguagePopupLearnMore>
-          </LanguagePopupView>
-        </ChangeMoneyBox>
-        <PopupAlearBox>
-          <PopupAlearImg src={Country} />
-          <PopupAlearText>You are shopping on Amazon.com.</PopupAlearText>
-        </PopupAlearBox>
-        <ChangeCountryBox>
-          <ChangeCountryText href="naver.com">
+            </Styles.LanguagePopupLearnMore>
+          </Styles.LanguagePopupView>
+        </Styles.ChangeMoneyBox>
+        <Styles.PopupAlearBox>
+          <Styles.PopupAlearImg src={Country} />
+          <Styles.PopupAlearText>
+            You are shopping on Amazon.com.
+          </Styles.PopupAlearText>
+        </Styles.PopupAlearBox>
+        <Styles.ChangeCountryBox>
+          <Styles.ChangeCountryText href="naver.com">
             Change country/region.
-          </ChangeCountryText>
-        </ChangeCountryBox>
-      </View>
-    </LanguagePopupBox>
+          </Styles.ChangeCountryText>
+        </Styles.ChangeCountryBox>
+      </Styles.View>
+    </Styles.LanguagePopupBox>
   );
 };
 
-const CountryPopup = props => {
+const CountryPopup = () => {
   return (
-    <StyledPopup
+    <Styles.StyledPopup
       trigger={open => (
-        <LanguageBox>
-          <LanguageImg src={Country} />
-          <LanguageText>&#9660;</LanguageText>
-        </LanguageBox>
+        <Styles.LanguageBox>
+          <Styles.LanguageImg src={Country} />
+          <Styles.LanguageText>&#9660;</Styles.LanguageText>
+        </Styles.LanguageBox>
       )}
       position="bottom left"
       closeOnDocumentClick
       on="hover"
     >
       <ConuntryPopupView />
-    </StyledPopup>
+    </Styles.StyledPopup>
   );
 };
 
