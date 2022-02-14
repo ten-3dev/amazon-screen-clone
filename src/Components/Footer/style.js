@@ -11,6 +11,9 @@ const BackToTopBox = styled.div`
   align-items: center;
   font-size: 13px;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
+  
   &:hover {
     background-color: #4a607a;
   }
@@ -25,6 +28,8 @@ const ShortcutBox = styled.div`
   height: 400px;
   justify-content: center;
   display: flex;
+  position: relative;
+  z-index: 1;
   @media screen and (max-width: 1000px) {
     width: 1000px;
   }

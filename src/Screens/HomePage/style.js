@@ -4,6 +4,7 @@ import { BannerLeftArrow, BannerRightArrow } from "../../Assets";
 
 export const HomePageWrapper = styled.div`
   position: relative;
+  background-color: #EAEDED;
   @media screen and (max-width: 1000px) {
     width: 1000px;
   }
@@ -56,7 +57,7 @@ export const BannerItem = styled.div`
   height: 600px;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(transparent, transparent, white),
+  background-image: linear-gradient(transparent, transparent, #EAEDED),
     ${props => {
       if (props.img) return `url(${props.img})`;
     }};
@@ -96,7 +97,12 @@ export const MainBox = styled.div`
   position: relative;
   z-index: 1;
   top: 250px;
-  margin-bottom: 250px;
+  padding-bottom: 250px;
+  margin-bottom: 30px;
+  
+  @media screen and (max-width: 1515px) {
+    width: 100%;
+  }
 `;
 
 export const MainSec = styled.div`

@@ -5,6 +5,8 @@ const BottomSignInBox = styled.div`
   height: 130px;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
   @media screen and (max-width: 1000px) {
     width: 1000px;
   }
