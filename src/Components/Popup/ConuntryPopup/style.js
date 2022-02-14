@@ -23,11 +23,23 @@ export const LanguageText = styled.span`
   margin-left: 5px;
 `;
 
+export const StyledPopupView = styled.div``;
+
 export const StyledPopup = styled(Popup)`
   &-overlay {
-    margin-top: 100px;
+    z-index: 1 !important;
     background-color: rgba(0, 0, 0, 0.5);
   }
+  &-content {
+    margin-top: -5px;
+  }
+`;
+
+export const LanguagePopupWrapper = styled.div`
+  border-width: 0px 20px 20px;
+  border-style: solid;
+  border-color: transparent;
+  margin-left: -20px;
 `;
 
 export const LanguagePopupBox = styled.div`

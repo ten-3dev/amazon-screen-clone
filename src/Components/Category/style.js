@@ -7,6 +7,8 @@ const CategoryBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  z-index: 2;
   @media screen and (max-width: 1000px) {
     width: 1000px;
   }

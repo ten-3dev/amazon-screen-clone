@@ -12,7 +12,7 @@ import {
 
 import { Menu } from "../../Assets";
 
-const Category = props => {
+const Category = () => {
   return (
     <CategoryBox>
       <CategorySec>

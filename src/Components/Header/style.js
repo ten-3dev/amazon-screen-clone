@@ -1,18 +1,20 @@
 import styled from "styled-components";
 
-const HeaderView = styled.div`
+export const HeaderView = styled.div`
   width: 100%;
   height: 60px;
   background-color: #131921;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  z-index: 2;
   @media screen and (max-width: 1000px) {
     width: 1000px;
   }
 `;
 
-const HeaderItemLogo = styled.img`
+export const HeaderItemLogo = styled.img`
   height: 30px;
   padding: 8px;
   border-radius: 2px;
@@ -22,7 +24,7 @@ const HeaderItemLogo = styled.img`
   cursor: pointer;
 `;
 
-const DeliverSec = styled.div`
+export const DeliverSec = styled.div`
   display: flex;
   height: 30px;
   flex-direction: row;
@@ -35,15 +37,15 @@ const DeliverSec = styled.div`
     outline: 1px solid white;
   }
 `;
-const DeliverImg = styled.img`
+export const DeliverImg = styled.img`
   width: 18px;
   height: 23px;
   margin-right: 5px;
 `;
 
-const DeliverTextSec = styled.div``;
+export const DeliverTextSec = styled.div``;
 
-const DeliverText = styled.div`
+export const DeliverText = styled.div`
   margin-top: 2px;
   color: ${props => {
     if (props.weight === "bold") {
@@ -65,7 +67,7 @@ const DeliverText = styled.div`
   }};
 `;
 
-const SearchSec = styled.div`
+export const SearchSec = styled.div`
   width: 62%;
   height: 40px;
   display: flex;
@@ -79,7 +81,7 @@ const SearchSec = styled.div`
   }}
 `;
 
-const SearchAllSec = styled.select`
+export const SearchAllSec = styled.select`
   width: 60px;
   height: 100%;
   background-color: #f3f3f3;
@@ -104,7 +106,7 @@ const SearchAllSec = styled.select`
   }
 `;
 
-const SearchAllImg = styled.img`
+export const SearchAllImg = styled.img`
   width: 12px;
   height: 12px;
   position: absolute;
@@ -114,11 +116,11 @@ const SearchAllImg = styled.img`
   }
 `;
 
-const SearchAllOption = styled.option`
+export const SearchAllOption = styled.option`
   background-color: white;
 `;
 
-const SearchInput = styled.input`
+export const SearchInput = styled.input`
   flex: 1;
   height: 100%;
   display: inline;
@@ -137,7 +139,7 @@ const SearchInput = styled.input`
   }
 `;
 
-const SearchBtn = styled.button`
+export const SearchBtn = styled.button`
   width: 45px;
   height: 100%;
   background-color: #febd69;
@@ -152,13 +154,13 @@ const SearchBtn = styled.button`
   }
 `;
 
-const SearchBtnImg = styled.img`
+export const SearchBtnImg = styled.img`
   width: 20px;
   height: 20px;
   object-fit: cotain;
 `;
 
-const ReturnsBox = styled.div`
+export const ReturnsBox = styled.div`
   display: flex;
   flex-direction: column;
   height: 30px;
@@ -171,7 +173,7 @@ const ReturnsBox = styled.div`
   }
 `;
 
-const ReturnsText = styled.span`
+export const ReturnsText = styled.span`
   color: white;
   font-size: ${props => {
     if (props.bold) {
@@ -186,7 +188,7 @@ const ReturnsText = styled.span`
   }};
 `;
 
-const ShopBagBox = styled.div`
+export const ShopBagBox = styled.div`
   height: 30px;
   display: flex;
   align-items: flex-end;
@@ -198,7 +200,7 @@ const ShopBagBox = styled.div`
   }
 `;
 
-const ShopBagTitle = styled.span`
+export const ShopBagTitle = styled.span`
   color: white;
   font-weight: 600;
   margin-left: 4px;
@@ -208,18 +210,18 @@ const ShopBagTitle = styled.span`
   }
 `;
 
-const ShopBagImgBox = styled.div`
+export const ShopBagImgBox = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-const ShopBagImg = styled.img`
+export const ShopBagImg = styled.img`
   height: 100%;
 `;
 
-const ShopBagCount = styled.span`
+export const ShopBagCount = styled.span`
   display: flex;
   flex-direction: column;
   color: orange;
@@ -228,26 +230,3 @@ const ShopBagCount = styled.span`
   margin-left: 6px;
   margin-top: -5px;
 `;
-
-export {
-  HeaderView,
-  HeaderItemLogo,
-  DeliverSec,
-  DeliverImg,
-  DeliverTextSec,
-  DeliverText,
-  SearchSec,
-  SearchAllSec,
-  SearchAllImg,
-  SearchInput,
-  SearchBtn,
-  SearchBtnImg,
-  SearchAllOption,
-  ReturnsBox,
-  ReturnsText,
-  ShopBagBox,
-  ShopBagImgBox,
-  ShopBagImg,
-  ShopBagCount,
-  ShopBagTitle
-};
