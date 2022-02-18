@@ -13,6 +13,14 @@ export const StyledPopup = styled(Popup)`
   }
 `;
 
+export const SignInWrapper = styled.div`
+  border-style: solid;
+  border-color: transparent;
+  margin-left: -20px;
+  border-width: ${props =>
+    props.show ? "20px 20px 0px 20px" : "0px 20px 20px"};
+`;
+
 export const SignInBox = styled.div`
   height: 30px;
   display: flex;

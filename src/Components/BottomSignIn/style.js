@@ -46,15 +46,19 @@ const BottomSignInSecNewSec = styled.div`
 `;
 
 const BottomSignInSecNewSecText = styled.span`
-  font-size: 12px;
+  font-size: 11px;
   color: black;
 `;
 
 const BottomSignInSecNewSecBtn = styled.span`
-  font-size: 12px;
+  font-size: 11px;
   margin-left: 5px;
-  color: #37a6dc;
+  color: #007185;
   cursor: pointer;
+
+  :hover {
+    color: #c7511f;
+  }
 `;
 
 export {
