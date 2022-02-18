@@ -72,7 +72,24 @@ const HomePage = () => {
           </Styles.SliderCustom>
         </Styles.BannerBox>
         <Styles.MainBox>
-          <Styles.MainSec></Styles.MainSec>
+          <Styles.MainSec>
+            <Styles.MainItemBox>
+              <Styles.MainItem>
+                <Styles.MainItemTitle>Gaming accessories</Styles.MainItemTitle>
+                <Styles.MainItemImgBox></Styles.MainItemImgBox>
+                <Styles.MainItemBottomBtn>See more</Styles.MainItemBottomBtn>
+              </Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+            </Styles.MainItemBox>
+          </Styles.MainSec>
         </Styles.MainBox>
       </Styles.HomePageWrapper>
       <BottomSignIn />

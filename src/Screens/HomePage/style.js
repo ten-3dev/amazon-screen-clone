@@ -4,7 +4,7 @@ import { BannerLeftArrow, BannerRightArrow } from "../../Assets";
 
 export const HomePageWrapper = styled.div`
   position: relative;
-  background-color: #EAEDED;
+  background-color: #eaeded;
   @media screen and (max-width: 1000px) {
     width: 1000px;
   }
@@ -57,7 +57,7 @@ export const BannerItem = styled.div`
   height: 600px;
   background-size: cover;
   background-position: center center;
-  background-image: linear-gradient(transparent, transparent, #EAEDED),
+  background-image: linear-gradient(transparent, transparent, #eaeded),
     ${props => {
       if (props.img) return `url(${props.img})`;
     }};
@@ -99,7 +99,7 @@ export const MainBox = styled.div`
   top: 250px;
   padding-bottom: 250px;
   margin-bottom: 30px;
-  
+
   @media screen and (max-width: 1515px) {
     width: 100%;
   }
@@ -107,7 +107,49 @@ export const MainBox = styled.div`
 
 export const MainSec = styled.div`
   width: 100%;
-  height: 1500px;
-  background-color: red;
-  opacity: 0.3;
+`;
+
+export const MainItemBox = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
+
+export const MainItem = styled.div`
+  width: 350px;
+  height: 420px;
+  background-color: white;
+  padding: 20px 20px 15px;
+  margin: 0px 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+export const MainItemTitle = styled.div`
+  width: 100%;
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 10px;
+`;
+
+export const MainItemBottomBtn = styled.span`
+  font-size: 13px;
+  color: #007185;
+  padding: 8px 0px;
+  cursor: pointer;
+
+  :hover {
+    color: #c7511f;
+    text-decoration: underline;
+  }
+`;
+
+export const MainItemImgBox = styled.div`
+  width: 100%;
+  flex: 1;
+  background-color: black;
+  padding-bottom: 15px;
+  box-sizing: border-box;
 `;
