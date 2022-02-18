@@ -89,6 +89,45 @@ const HomePage = () => {
               <Styles.MainItem></Styles.MainItem>
               <Styles.MainItem></Styles.MainItem>
             </Styles.MainItemBox>
+            <Styles.MainItemBox scrollBox>
+              <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox scrollBox>
+              <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox scrollBox>
+              <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox scrollBox>
+              <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox scrollBox>
+              <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox scrollBox>
+              <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+              <Styles.MainItem></Styles.MainItem>
+            </Styles.MainItemBox>
+            <Styles.MainItemBox scrollBox>
+              <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
+            </Styles.MainItemBox>
           </Styles.MainSec>
         </Styles.MainBox>
       </Styles.HomePageWrapper>
