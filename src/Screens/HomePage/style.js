@@ -166,12 +166,12 @@ export const MainItemBottomBtn = styled.span`
   }
 `;
 
-export const MainItemImgBox = styled.div`
+export const MainItemImgBox = styled.img`
   width: 100%;
   flex: 1;
-  background-color: black;
   padding-bottom: 15px;
   box-sizing: border-box;
+  object-fit: cover;
 `;
 
 export const MainItemScrollBox = styled.div`

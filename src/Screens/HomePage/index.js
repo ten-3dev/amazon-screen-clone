@@ -4,6 +4,8 @@ import Header from "../../Components/Header";
 import Category from "../../Components/Category";
 import BottomSignIn from "../../Components/BottomSignIn";
 import Footer from "../../Components/Footer";
+import HomePageItem from "./HomePageItem";
+import { BannerList } from "../../Data";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -13,14 +15,6 @@ const HomePage = () => {
     next: useRef(),
     prev: useRef()
   };
-
-  //배너 이미지 배열
-  const BannerList = [
-    "https://m.media-amazon.com/images/I/61DUO0NqyyL._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/61nfpX0p23L._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/61rSRZL9kaL._SX3000_.jpg",
-    "https://m.media-amazon.com/images/I/610aFo74RdL._SX3000_.jpg"
-  ];
 
   //이벤트 분리 (가독성)
   const ArrowOnClick = (clickEvent, type) => {
@@ -73,58 +67,29 @@ const HomePage = () => {
         </Styles.BannerBox>
         <Styles.MainBox>
           <Styles.MainSec>
-            <Styles.MainItemBox>
-              <Styles.MainItem>
-                <Styles.MainItemTitle>Gaming accessories</Styles.MainItemTitle>
-                <Styles.MainItemImgBox></Styles.MainItemImgBox>
-                <Styles.MainItemBottomBtn>See more</Styles.MainItemBottomBtn>
-              </Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-            </Styles.MainItemBox>
-            <Styles.MainItemBox>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-            </Styles.MainItemBox>
+            <HomePageItem />
+            <HomePageItem />
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
-            <Styles.MainItemBox>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-            </Styles.MainItemBox>
+            <HomePageItem />
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
-            <Styles.MainItemBox>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-            </Styles.MainItemBox>
+            <HomePageItem />
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
-            <Styles.MainItemBox>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-              <Styles.MainItem></Styles.MainItem>
-            </Styles.MainItemBox>
+            <HomePageItem />
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
