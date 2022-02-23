@@ -18,6 +18,14 @@ export const MainItemBox = styled.div`
   }
 `;
 
+export const MainItemScrollBox = styled.div`
+  width: 100%;
+  height: 281px;
+  background-color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+`;
+
 export const MainItem = styled.div`
   width: 350px;
   height: 420px;

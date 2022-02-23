@@ -13,3 +13,23 @@ export const ItemList = [
   "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/January/Fuji_Dash_Echo_Jan21_1x._SY304_CB413054652_.jpg",
   "https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Electronics_1x._SY304_CB432774322_.jpg"
 ];
+
+//메인 아이템에 쓰일 통데이터(?) 추후 추가예정
+export const MainItem = [
+  {
+    title: "Gaming accessories",
+    img: ItemList[0]
+  },
+  {
+    title: "Gaming accessories",
+    img: ItemList[0]
+  },
+  {
+    title: "Gaming accessories",
+    img: ItemList[0]
+  },
+  {
+    title: "Gaming accessories",
+    img: ItemList[0]
+  }
+];
