@@ -68,7 +68,7 @@ const HomePage = () => {
         <Styles.MainBox>
           <Styles.MainSec>
             <HomePageItem />
-            <HomePageItem />
+            {/* <HomePageItem />
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
             </Styles.MainItemBox>
@@ -92,7 +92,7 @@ const HomePage = () => {
             <HomePageItem />
             <Styles.MainItemBox scrollBox>
               <Styles.MainItemScrollBox></Styles.MainItemScrollBox>
-            </Styles.MainItemBox>
+            </Styles.MainItemBox> */}
           </Styles.MainSec>
         </Styles.MainBox>
       </Styles.HomePageWrapper>
